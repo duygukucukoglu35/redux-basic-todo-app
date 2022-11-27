@@ -3,14 +3,17 @@ import {Provider} from "react-redux";
 // import{reducer} from "./redux";
 // import { legacy_createStore as createStore} from 'redux';
 import {store} from './redux'
+import Todo from "./components/todo/Todo";
+import "./App.css";
 
 
 function App() {
   // const store = createStore(reducer)
   return (
-    <div>
+    <div className="App">
       <Provider store={store}>
       <Counter/>
+      <Todo/>
       </Provider>
     
       
